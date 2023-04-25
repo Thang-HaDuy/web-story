@@ -1,0 +1,78 @@
+# install django
+pip install django
+
+# create django project
+django-admin startproject ecourses
+
+# run server
+python manage.py runserver
+
+# create new app
+django-admin startapp courses
+
+# suppost upload image
+pip install pillow
+
+# install driver on mysql
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+pip install pymysql
+pip install mysqlclient
+
+pip install psycopg2
+pip install psycopg2-binary
+
+# migration database
+python manage.py makemigrations courses
+
+# action migratiom
+python manage.py migrate
+
+# create super user
+python manage.py createsuperuser
+
+# integrated CKEditoe on admin
+# 'ckeditor',
+# 'ckeditor_uploader',
+pip install django-ckeditor
+
+# install djangorestframework
+# 'rest_framework',
+pip install djangorestframework
+
+# install django-oauth-toolkit
+# 'oauth2_provider',
+# path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+pip install django-oauth-toolkit
+python manage.py migrate oauth2_provider
+
+# install swagger
+# 'drf_yasg',
+pip install drf-yasg
+
+# install library all
+pip install -r <file-library.txt>
+
+# install cors
+# 'corsheaders',
+# 'corsheaders.middleware.CorsMiddleware',
+#  CORS_ORIGIN_ALLOW_ALL = True
+
+pip install django-cors-headers
+
+pip install django-rest-passwordreset
+python manage.py migrate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
